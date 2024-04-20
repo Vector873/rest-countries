@@ -1,4 +1,5 @@
 import "./globals.css";
+import Head from "next/head";
 
 export const metadata = {
   title: "Rest Countries",
@@ -8,11 +9,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <body>{children}</body>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
-        rel="stylesheet"
-      />
     </html>
   );
 }
