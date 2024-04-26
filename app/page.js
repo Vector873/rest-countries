@@ -4,14 +4,14 @@ import { AiOutlineSearch } from "react-icons/ai";
 import axios from "axios";
 import { useState, useEffect } from "react";
 export default function Home() {
-  const [Data, setData] = useState([]);
+  const [country, setcountry] = useState([]);
   useEffect(() => {
     const fetchcountries = async () => {
       try {
-        const res = await axios.get("/public/data.json");
+        const res = await axios.get("https://restcountries.com/v3.1/all");
         const data = res.data;
-        setData(data);
-        console.log(data);
+        setcountry(data);
+        console.log(country);
       } catch (error) {
         console.log(error);
       }
@@ -36,6 +36,11 @@ export default function Home() {
           <option value="Europe">Europe</option>
           <option value="Oceania">Oceania</option>
         </select>
+      </div>
+      <div className="bodysection">
+        {country.map((c) => {
+          <div className="country"></div>;
+        })}
       </div>
     </>
   );

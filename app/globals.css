@@ -65,3 +65,14 @@ body {
     padding-top: 2rem;
   }
 }
+.bodysection {
+  padding: 0 4rem 0 4rem;
+  display: inline-flex;
+  gap: 4rem;
+}
+.country {
+  height: 16rem;
+  width: 14rem;
+  background-color: hsl(209, 23%, 22%);
+  border-radius: 5px;
+}
