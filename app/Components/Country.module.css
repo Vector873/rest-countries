@@ -1,0 +1,22 @@
+.bodysection {
+  padding: 0 4rem 0 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.country {
+  height: 18rem;
+  width: 14rem;
+  background-color: hsl(209, 23%, 22%);
+  border-radius: 5px;
+}
+.countryinfo {
+  padding: 15px 0 0 20px;
+  color: white;
+}
+.countryinfo h4 {
+  margin-bottom: 10px;
+}
+.countryinfo p {
+  color: hsl(0, 0%, 52%);
+}
